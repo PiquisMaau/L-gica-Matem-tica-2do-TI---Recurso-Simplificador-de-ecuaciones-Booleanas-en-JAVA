@@ -16,7 +16,6 @@ public class VentanaSimplificador extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // PANEL SUPERIOR
         JPanel panelTitulo = new JPanel();
         panelTitulo.setBackground(new Color(25, 25, 25));
         JLabel titulo = new JLabel("Simplificador Booleano PRO");
@@ -25,7 +24,6 @@ public class VentanaSimplificador extends JFrame {
         panelTitulo.add(titulo);
         add(panelTitulo, BorderLayout.NORTH);
 
-        // PANEL CENTRAL
         JPanel panelCentro = new JPanel(new GridLayout(1, 2, 10, 10));
         panelCentro.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
@@ -42,7 +40,6 @@ public class VentanaSimplificador extends JFrame {
 
         add(panelCentro, BorderLayout.CENTER);
 
-        // PANEL INFERIOR
         JPanel panelBoton = new JPanel();
         btnSimplificar = new JButton("Simplificar");
         btnSimplificar.setFont(new Font("Segoe UI", Font.BOLD, 20));
@@ -54,7 +51,6 @@ public class VentanaSimplificador extends JFrame {
         panelBoton.add(btnSimplificar);
         add(panelBoton, BorderLayout.SOUTH);
 
-        // ACCIÓN DEL BOTÓN
         btnSimplificar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
